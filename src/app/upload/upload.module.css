@@ -1,0 +1,50 @@
+/* Example CSS for animations */
+.upload-animation-enter {
+    opacity: 0;
+  }
+  
+  .upload-animation-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .upload-animation-exit {
+    opacity: 1;
+  }
+  
+  .upload-animation-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .blast-effect-enter {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  .blast-effect-enter-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+                opacity 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  
+  .blast-effect-exit {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .blast-effect-exit-active {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28),
+                opacity 500ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  
+  .blast-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  
